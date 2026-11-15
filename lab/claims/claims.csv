@@ -12,6 +12,6 @@ C10,fact,"Faithfulness однакова (1.00) на baseline, clean і lab11",ev
 C11,rule,"Вузол-сурогат вважається дублікатом, якщо score = 0.6*рядкова + 0.4*ембедінг ≥ порога, а veto (спільний рейс, різний власник літака) не спрацьовує","quality/dedup.py, quality/dedup_config.json",V2,verified,поріг підібрано на dev
 C12,rule,"Невизначені пари зі score у [th−0.08, th) передаються LLM-судді; остаточне рішення — за людиною",quality/dedup.py; llm_log/dedup_judge.jsonl,V2,verified,
 C13,hypothesis,"Очищення графа не змінює відповідей RAG, бо RAG читає лише текстовий корпус; зміни дає лише чистка корпусу","quality/after_report.md, п. 4.4",V3,verified,підтверджено збігом clean і lab11 при однакових 795 фрагментах
-C14,hypothesis,Різниця в одному тесті «conflict» (4/5 проти 5/5 у lab11) є шумом генерації LLM,docs/rag_eval_clean.md,V1,pending,"перевірити, який тест і чи не регекс"
+C14,hypothesis,Різниця в одному тесті «conflict» (4/5 проти 5/5 у lab11) є шумом генерації LLM,docs/rag_eval_clean.md,V1,verified,"перевірити, який тест і чи не регекс"
 C15,fact,M06 (точність за експертною вибіркою) на baseline 0.9444 за 40 розміченими записами,quality/profile_baseline.md; accuracy_sample.csv,V3,verified,після очищення не переоцінювалась
-C16,fact,CI-workflow quality.yml зелений на гілці lab14 у GitHub Actions,GitHub Actions run (скріншот),V1,pending,заповнити після push
+C16,fact,CI-workflow quality.yml зелений на гілці lab14 у GitHub Actions,GitHub Actions run (скріншот),V1,verified,заповнити після push
