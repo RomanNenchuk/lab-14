@@ -1,23 +1,47 @@
-# ЛР 14, Результат 4: «gate» якості сховища. Зараз запускає лише офлайн-тести каркаса;
-# перевірки SHACL/SPARQL/JSON Schema/pytest додаються в lab-14/quality/tests/.
 name: quality
 on:
   push:
-    paths: ["lab-14/**", ".github/workflows/quality.yml"]
+    paths: ["lab/**", ".github/workflows/quality.yml"]
   pull_request:
-    paths: ["lab-14/**", ".github/workflows/quality.yml"]
+    paths: ["lab/**", ".github/workflows/quality.yml"]
+  workflow_dispatch:
 jobs:
   quality:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: lab-14
+        working-directory: lab
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
-          cache-dependency-path: lab-14/requirements-ci.txt
+          cache-dependency-path: lab/requirements-ci.txt
       - run: pip install -r requirements-ci.txt
-      - run: python -m pytest quality/tests -q
+
+      - name: Тести (pytest)
+        run: python -m pytest quality/tests -q
+
+      - name: Gate на еталонному сховищі lab11 (блокує при порушенні)
+        run: python -m quality.gate --variant lab11 --no-history
+
+      - name: Демонстрація, 3 навмисні дефекти мають бути виявлені
+        run: python -m quality.ci_demo
+
+      - name: Контроль, baseline-v2 має блокуватися
+        run: "! python -m quality.gate --variant baseline --no-history"
+
+      - name: Gate на clean
+        if: ${{ hashFiles('lab/data/clean/**') != '' }}
+        continue-on-error: true
+        run: python -m quality.gate --variant clean --no-history
+
+      - name: Звіти як артефакти
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: quality-reports
+          path: |
+            lab/quality/ci_report.md
+            lab/quality/ci_demo.md
