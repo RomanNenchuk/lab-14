@@ -1,0 +1,55 @@
+@prefix sh:  <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix av:  <https://example.org/aviation#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# ЛР 14, Результат 4: SHACL-форми якості сховища знань (граф авіаперевезень).
+# Кожна властивісна форма має ім'я av:S0x_...; gate зіставляє порушення з правилом S0x за префіксом імені.
+# Перевіряється RDF із quality/store.py:build_rdf(): вузли, прямі зв'язки та вузли av:Relation із provenance.
+
+av:FlightShape a sh:NodeShape ; sh:targetClass av:Flight ;
+  sh:property av:S01_departs, av:S01_arrives, av:S02_operator, av:S02_aircraft, av:S02_pilot, av:S08_date, av:S08_kind .
+
+av:S01_departs a sh:PropertyShape ; sh:path av:departsFrom ; sh:minCount 1 ; sh:maxCount 1 ;
+  sh:message "S01: рейс має рівно один аеропорт вильоту" .
+av:S01_arrives a sh:PropertyShape ; sh:path av:arrivesAt ; sh:minCount 1 ; sh:maxCount 1 ;
+  sh:message "S01: рейс має рівно один аеропорт прильоту" .
+av:S02_operator a sh:PropertyShape ; sh:path av:operatedBy ; sh:minCount 1 ; sh:maxCount 1 ;
+  sh:message "S02: рейс виконує рівно одна авіакомпанія" .
+av:S02_aircraft a sh:PropertyShape ; sh:path av:usesAircraft ; sh:minCount 1 ; sh:maxCount 1 ;
+  sh:message "S02: рейс використовує рівно один літак" .
+av:S02_pilot a sh:PropertyShape ; sh:path av:hasPilot ; sh:minCount 1 ; sh:maxCount 1 ;
+  sh:message "S02: рейс має рівно одного пілота" .
+av:S08_date a sh:PropertyShape ; sh:path av:date ; sh:minCount 1 ; sh:maxCount 1 ;
+  sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ; sh:message "S08: date у форматі РРРР-ММ-ДД" .
+av:S08_kind a sh:PropertyShape ; sh:path av:kind ; sh:minCount 1 ; sh:in ( "passenger" "cargo" ) ;
+  sh:message "S08: kind ∈ {passenger, cargo}" .
+
+av:PilotShape a sh:NodeShape ; sh:targetClass av:Pilot ; sh:property av:S03_hours .
+av:S03_hours a sh:PropertyShape ; sh:path av:flightHours ; sh:minCount 1 ; sh:datatype xsd:integer ; sh:minInclusive 0 ;
+  sh:message "S03: flightHours — невід'ємне ціле" .
+
+av:AircraftShape a sh:NodeShape ; sh:targetClass av:Aircraft ; sh:property av:S04_seats .
+av:S04_seats a sh:PropertyShape ; sh:path av:seatCapacity ; sh:minCount 1 ; sh:datatype xsd:integer ; sh:minInclusive 0 ;
+  sh:message "S04: seatCapacity задано й невід'ємне (0 лише для вантажних)" .
+
+av:DelayShape a sh:NodeShape ; sh:targetClass av:Delay ; sh:property av:S05_minutes .
+av:S05_minutes a sh:PropertyShape ; sh:path av:minutes ; sh:minCount 1 ; sh:datatype xsd:integer ; sh:minInclusive 1 ; sh:maxInclusive 1440 ;
+  sh:message "S05: minutes ∈ [1, 1440]" .
+
+av:AirportShape a sh:NodeShape ; sh:targetClass av:Airport ; sh:property av:S06_city, av:S06_name .
+av:S06_city a sh:PropertyShape ; sh:path av:locatedIn ; sh:minCount 1 ; sh:maxCount 1 ;
+  sh:message "S06: аеропорт розташований рівно в одному місті" .
+av:S06_name a sh:PropertyShape ; sh:path av:name ; sh:minCount 1 ; sh:message "S06: аеропорт має назву" .
+
+av:RelationShape a sh:NodeShape ; sh:targetClass av:Relation ; sh:property av:S07_source, av:S07_conf, av:S07_from .
+av:S07_source a sh:PropertyShape ; sh:path av:source ; sh:minCount 1 ; sh:minLength 1 ;
+  sh:message "S07: кожен зв'язок має джерело (source)" .
+av:S07_conf a sh:PropertyShape ; sh:path av:confidence ; sh:minCount 1 ; sh:minInclusive 0 ; sh:maxInclusive 1 ;
+  sh:message "S07: confidence ∈ [0, 1]" .
+av:S07_from a sh:PropertyShape ; sh:path av:validFrom ; sh:minCount 1 ;
+  sh:message "S07: зв'язок має validFrom" .
+
+av:RiskShape a sh:NodeShape ; sh:targetClass av:Risk ; sh:property av:S09_level .
+av:S09_level a sh:PropertyShape ; sh:path av:level ; sh:minCount 1 ; sh:datatype xsd:integer ; sh:minInclusive 1 ; sh:maxInclusive 5 ;
+  sh:message "S09: level ризику ∈ [1, 5]" .

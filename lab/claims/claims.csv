@@ -1,0 +1,17 @@
+id,claim,type,source,verification_level,status,comment
+C01,fact,Baseline-v2 містить 24 таблиці графа; після очищення gate (20 правил) проходить без порушень (232 → 0),"quality/after_report.md, табл. 2; make gate-baseline / gate-clean",V2,verified,відтворено командами; дефекти синтетичні
+C02,fact,"Метрики якості M01–M14: до очищення 2 пройдено / 11 ні, після 12 пройдено / 1 ні","quality/after_report.md, табл. 1; make measure-clean",V2,verified,M08=0.9783 нижче порогу 0.98
+C03,fact,"M08 (унікальність сутностей) після злиття 0.9783, до 0.8042","quality/metrics.json, metrics_clean.json",V2,verified,рахується наближеним правилом із хибними спрацюваннями на «пастках»
+C04,fact,"Злито 53 кластери дублікатів: 52 за правилом, 1 за рішенням власника",data/clean/merge_log.jsonl; make dedup-apply,V2,verified,є unmerge; псевдоніми в entity_aliases.csv
+C05,fact,Recall дедуплікації на test-наборі pairs_gold.csv дорівнює 0.923,quality/dedup_report.md; make dedup-eval,V3,verified,"мітки частково походять із ground truth ін'єкції, тому не повністю незалежні"
+C06,fact,"Шість дзеркал статей виведено в kb/_quarantine; корпус clean має 795 фрагментів, як у lab11",data/clean/doc_merge_log.jsonl; make index-clean,V2,verified,
+C07,fact,"Розв'язано 35 суперечностей (date 7, trust 6, owner 13, consensus 9)",quality/conflicts.md; data/clean/conflict_decisions.jsonl,V2,verified,рішення власника підтверджені в owner_decisions.csv
+C08,fact,"Зроблено 29 виправлень значень: derived 16, imputed 10, heuristic 3",data/clean/fix_log.jsonl; make fix-clean,V2,verified,"imputed — оцінки (медіана), не відновлена істина"
+C09,fact,RAG: точність цитування зросла з 0.75 (baseline) до 0.93 (clean); doc recall 0.89 → 0.94,"docs/rag_eval_baseline.md, docs/rag_eval_clean.md",V2,verified,"37 тестів, мала вибірка"
+C10,fact,"Faithfulness однакова (1.00) на baseline, clean і lab11",eval/rag_eval_results_*.jsonl,V2,verified,суддя — Gemini; метрика майже не розрізняє варіанти
+C11,rule,"Вузол-сурогат вважається дублікатом, якщо score = 0.6*рядкова + 0.4*ембедінг ≥ порога, а veto (спільний рейс, різний власник літака) не спрацьовує","quality/dedup.py, quality/dedup_config.json",V2,verified,поріг підібрано на dev
+C12,rule,"Невизначені пари зі score у [th−0.08, th) передаються LLM-судді; остаточне рішення — за людиною",quality/dedup.py; llm_log/dedup_judge.jsonl,V2,verified,
+C13,hypothesis,"Очищення графа не змінює відповідей RAG, бо RAG читає лише текстовий корпус; зміни дає лише чистка корпусу","quality/after_report.md, п. 4.4",V3,verified,підтверджено збігом clean і lab11 при однакових 795 фрагментах
+C14,hypothesis,Різниця в одному тесті «conflict» (4/5 проти 5/5 у lab11) є шумом генерації LLM,docs/rag_eval_clean.md,V1,pending,"перевірити, який тест і чи не регекс"
+C15,fact,M06 (точність за експертною вибіркою) на baseline 0.9444 за 40 розміченими записами,quality/profile_baseline.md; accuracy_sample.csv,V3,verified,після очищення не переоцінювалась
+C16,fact,CI-workflow quality.yml зелений на гілці lab14 у GitHub Actions,GitHub Actions run (скріншот),V1,pending,заповнити після push

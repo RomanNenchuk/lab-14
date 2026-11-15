@@ -1,0 +1,125 @@
+# Результат 1, Крок 1: метрики якості сховища знань (авіаперевезення) за 8 вимірами.
+# Пороги М02, М04, М11, М12 — «жорсткі обмеження»: будь-яка одиниця браку є дефектом, тому допуск ≤ 1 на 1000. Спершу було 0.995 для
+# М02 і М04; після першого вимірювання це змінено на 0.999, бо 6–12 прямих суперечностей/безджерельних зв'язків проходили б поріг (зафіксовано в profile_baseline.md).
+# Значення метрики = частка «добрих» елементів (0..1). Метрика пройдена, якщо value >= threshold.
+# Пороги обґрунтовано за призначенням даних: RAG цитує тексти (корпус), а граф дає відповіді на запитання за зв'язками,
+# тому помилки в тексті й суперечності в графі критичніші за косметичні.
+metrics:
+  - id: M01
+    name: completeness_attributes
+    dimension: повнота
+    scope: "граф, таблиці вузлів"
+    formula: "непорожні комірки / усі комірки у flights, aircraft, pilots, passengers, airports, delays, risks"
+    threshold: 0.995
+    why: "порожній seatCapacity/flightHours/kind ламає агрегати й відповіді на запитання про параметри"
+
+  - id: M02
+    name: completeness_provenance_fields
+    dimension: походження
+    scope: "граф, таблиці зв'язків"
+    formula: "зв'язки з непорожніми source, confidence, validFrom / усі зв'язки"
+    threshold: 0.999
+    why: "без source неможливо розв'язати суперечність за довірою до джерела (Результат 3)"
+
+  - id: M03
+    name: consistency_logic_flights
+    dimension: узгодженість
+    scope: "граф, рейси"
+    formula: "рейси без логічних порушень / усі рейси (відправлення≠призначення; date = дата scheduledDeparture; наступний рейс nextLeg пізніше за поточний)"
+    threshold: 0.995
+    why: "логічно хибний рейс дає неправдиві відповіді на запитання про маршрути й пересадки"
+
+  - id: M04
+    name: consistency_functional_relations
+    dimension: узгодженість
+    scope: "граф, функціональні зв'язки"
+    formula: "початкові вузли з ≤ 1 різним кінцем / усі початкові вузли для operatedBy, usesAircraft, departsFrom, arrivesAt, ownedBy, locatedIn, inCountry"
+    threshold: 0.999
+    why: "рейс не може мати двох операторів чи двох літаків одночасно; це прямі суперечності"
+
+  - id: M05
+    name: consistency_terminology
+    dimension: узгодженість
+    scope: "граф, aircraft.model"
+    formula: "літаки з моделлю з контрольованого словника / усі літаки"
+    vocabulary_aircraft_models: ["Embraer E190", "Airbus A220-300", "Boeing 737-800", "Airbus A320", "ATR 72-600", "Boeing 737-800F"]
+    threshold: 0.98
+    why: "різні назви одного типу ламають групування й OLAP-куби ЛР 12"
+
+  - id: M06
+    name: accuracy_expert_sample
+    dimension: точність
+    scope: "граф і корпус, випадкова стратифікована вибірка"
+    formula: "твердження, визнані експертом правильними / перевірені (n ≥ 30); дається 95% інтервал Вілсона"
+    threshold: 0.95
+    min_sample: 30
+    why: "точність не обчислюється автоматично, лише експертною перевіркою за джерелом"
+
+  - id: M07
+    name: timeliness_corpus_freshness
+    dimension: актуальність
+    scope: "корпус"
+    formula: "фрагменти з date не старшими за 365 днів на дату зрізу / усі фрагменти"
+    max_age_days: 365
+    threshold: 0.95
+    why: "застарілі копії статей дають застарілі факти; RAG не розрізняє їх за датою"
+
+  - id: M08
+    name: uniqueness_entities
+    dimension: унікальність
+    scope: "граф, passengers, pilots, airports, aircraft"
+    formula: "1 − (сутності, що входять у кандидатні дублікати за грубим правилом / усі сутності); правило: token_sort_ratio ≥ 90 після нормалізації, або однакові ініціал+прізвище, або однаковий нормалізований реєстраційний номер"
+    threshold: 0.98
+    rule: "груба оцінка, точне виявлення з precision/recall у Результаті 2"
+    why: "дублікати розщеплюють історію особи/літака між записами й спотворюють підрахунки"
+
+  - id: M09
+    name: uniqueness_chunks
+    dimension: унікальність
+    scope: "корпус"
+    formula: "1 − (зайві фрагменти-копії / усі фрагменти); копія = token_set_ratio ≥ 90 із фрагментом іншого документа, який іде раніше за doc_id"
+    threshold: 0.98
+    why: "копії забивають top-k пошуку однаковим контекстом і витісняють різноманітність джерел"
+
+  - id: M10
+    name: provenance_license_consistency
+    dimension: походження
+    scope: "корпус"
+    formula: "фрагменти, де ліцензія й джерело узгоджені / усі фрагменти (wikipedia.org ↔ CC BY-SA 4.0; інше джерело з license «own work» чи без стандартного домену вважається неузгодженим)"
+    threshold: 0.99
+    why: "неузгоджене походження блокує повторне використання й перевірку цитат"
+
+  - id: M11
+    name: validity_value_ranges
+    dimension: валідність
+    scope: "граф"
+    formula: "значення в допустимих межах / перевірені значення; flightHours 0–40000, delays.minutes 0–720, risks.level 1–5, seatCapacity 1–900 (для вантажних …F допустимо 0), дати ISO"
+    threshold: 0.999
+    why: "значення поза діапазоном ламають агрегати й показують помилку вимірювання"
+
+  - id: M12
+    name: validity_referential_integrity
+    dimension: валідність
+    scope: "граф, зв'язки"
+    formula: "зв'язки з існуючими кінцями потрібного класу / усі зв'язки"
+    threshold: 1.0
+    why: "висяча посилка робить зв'язок непридатним до обходу графа"
+
+  - id: M13
+    name: accessibility_metadata_labels
+    dimension: доступність
+    scope: "корпус"
+    formula: "фрагменти з коректним sensitivity ∈ {public, internal, restricted}, http(s) source_url і непорожнім текстом / усі фрагменти"
+    threshold: 1.0
+    why: "рівень доступу й джерело потрібні RAG для контролю прав і цитування"
+
+  - id: M14
+    name: accessibility_index_coverage
+    dimension: доступність
+    scope: "корпус та індекс e5"
+    formula: "документи корпусу, наявні в індексі пошуку / усі документи (якщо індекс побудовано)"
+    threshold: 1.0
+    why: "документ поза індексом недосяжний для RAG, хоч лежить у сховищі"
+
+# Допоміжні значення для зрізу
+reference_date: "2026-11-14"

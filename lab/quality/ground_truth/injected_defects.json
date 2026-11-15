@@ -1,0 +1,1911 @@
+{
+ "version": "baseline-v2",
+ "seed": 42,
+ "note": "СИНТЕТИЧНІ дефекти; лише для оцінювання. Виявлячі (dedup.py тощо) цей файл не читають.",
+ "summary": {
+  "defects": 123,
+  "by_type": {
+   "duplicate": 58,
+   "value_conflict": 19,
+   "logical_conflict": 10,
+   "temporal_conflict": 3,
+   "terminology_conflict": 5,
+   "missing_value": 14,
+   "invalid_value": 5,
+   "missing_provenance": 1,
+   "stale": 6,
+   "inconsistent_metadata": 2
+  },
+  "duplicate_pairs": 52,
+  "decoy_pairs": 14,
+  "mirror_docs": 6
+ },
+ "duplicate_pairs": [
+  {
+   "entity": "pilot",
+   "a": "P041",
+   "b": "P045",
+   "variant": "initial",
+   "names": [
+    "Thomas Schmidt",
+    "T. Schmidt"
+   ]
+  },
+  {
+   "entity": "pilot",
+   "a": "P008",
+   "b": "P046",
+   "variant": "typo",
+   "names": [
+    "Oleh Savchenko",
+    "Oeh Savchenko"
+   ]
+  },
+  {
+   "entity": "pilot",
+   "a": "P002",
+   "b": "P047",
+   "variant": "case",
+   "names": [
+    "Yulia Kowalski",
+    "YULIA KOWALSKI"
+   ]
+  },
+  {
+   "entity": "pilot",
+   "a": "P018",
+   "b": "P048",
+   "variant": "initial",
+   "names": [
+    "Olena Schmidt",
+    "O. Schmidt"
+   ]
+  },
+  {
+   "entity": "pilot",
+   "a": "P016",
+   "b": "P049",
+   "variant": "initial",
+   "names": [
+    "Katarzyna Lysenko",
+    "K. Lysenko"
+   ]
+  },
+  {
+   "entity": "pilot",
+   "a": "P015",
+   "b": "P050",
+   "variant": "order",
+   "names": [
+    "Marek Shevchenko",
+    "Shevchenko Marek"
+   ]
+  },
+  {
+   "entity": "pilot",
+   "a": "P009",
+   "b": "P051",
+   "variant": "initial",
+   "names": [
+    "Viktor Savchenko",
+    "V. Savchenko"
+   ]
+  },
+  {
+   "entity": "pilot",
+   "a": "P007",
+   "b": "P052",
+   "variant": "order",
+   "names": [
+    "Sofiia Hrytsenko",
+    "Hrytsenko Sofiia"
+   ]
+  },
+  {
+   "entity": "pilot",
+   "a": "P035",
+   "b": "P053",
+   "variant": "typo",
+   "names": [
+    "Andrii Kravchuk",
+    "Andrrii Kravchuk"
+   ]
+  },
+  {
+   "entity": "pilot",
+   "a": "P006",
+   "b": "P054",
+   "variant": "typo",
+   "names": [
+    "Oleh Bondar",
+    "Oleh Bodar"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X020",
+   "b": "X091",
+   "variant": "case",
+   "names": [
+    "Agnieszka Savchenko",
+    "AGNIESZKA SAVCHENKO"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X081",
+   "b": "X092",
+   "variant": "order",
+   "names": [
+    "Daryna Lysenko",
+    "Lysenko Daryna"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X021",
+   "b": "X093",
+   "variant": "order",
+   "names": [
+    "Lukas Tkachenko",
+    "Tkachenko Lukas"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X055",
+   "b": "X094",
+   "variant": "initial",
+   "names": [
+    "Daryna Kovalenko",
+    "D. Kovalenko"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X077",
+   "b": "X095",
+   "variant": "initial",
+   "names": [
+    "Marek Kravchuk",
+    "M. Kravchuk"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X009",
+   "b": "X096",
+   "variant": "typo",
+   "names": [
+    "Olena Muller",
+    "Olna Muller"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X050",
+   "b": "X097",
+   "variant": "translit",
+   "names": [
+    "Yulia Tkachenko",
+    "Yuliia Tkachenko"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X049",
+   "b": "X098",
+   "variant": "initial",
+   "names": [
+    "Daryna Schmidt",
+    "D. Schmidt"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X086",
+   "b": "X099",
+   "variant": "typo",
+   "names": [
+    "Oleh Muller",
+    "Oleh uller"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X060",
+   "b": "X100",
+   "variant": "initial",
+   "names": [
+    "Piotr Schmidt",
+    "P. Schmidt"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X068",
+   "b": "X101",
+   "variant": "typo",
+   "names": [
+    "Klara Melnyk",
+    "Klraa Melnyk"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X033",
+   "b": "X102",
+   "variant": "initial",
+   "names": [
+    "Viktor Kravchuk",
+    "V. Kravchuk"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X071",
+   "b": "X103",
+   "variant": "case",
+   "names": [
+    "Katarzyna Tkachenko",
+    "KATARZYNA TKACHENKO"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X002",
+   "b": "X104",
+   "variant": "translit",
+   "names": [
+    "Sofiia Fischer",
+    "Sofiya Fischer"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X015",
+   "b": "X105",
+   "variant": "case",
+   "names": [
+    "Taras Weber",
+    "TARAS WEBER"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X069",
+   "b": "X106",
+   "variant": "typo",
+   "names": [
+    "Julia Shevchenko",
+    "Julia Shwvchenko"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X035",
+   "b": "X107",
+   "variant": "order",
+   "names": [
+    "Agnieszka Wisniewski",
+    "Wisniewski Agnieszka"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X044",
+   "b": "X108",
+   "variant": "case",
+   "names": [
+    "Hanna Savchenko",
+    "HANNA SAVCHENKO"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X076",
+   "b": "X109",
+   "variant": "case",
+   "names": [
+    "Oleh Nowak",
+    "OLEH NOWAK"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X038",
+   "b": "X110",
+   "variant": "order",
+   "names": [
+    "Mykola Muller",
+    "Muller Mykola"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X056",
+   "b": "X111",
+   "variant": "typo",
+   "names": [
+    "Natalia Ivanenko",
+    "Natalia Ivanenok"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X088",
+   "b": "X112",
+   "variant": "case",
+   "names": [
+    "Agnieszka Tkachenko",
+    "AGNIESZKA TKACHENKO"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X059",
+   "b": "X113",
+   "variant": "order",
+   "names": [
+    "Lukas Wisniewski",
+    "Wisniewski Lukas"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X001",
+   "b": "X114",
+   "variant": "typo",
+   "names": [
+    "Oleh Ivanenko",
+    "Olehh Ivanenko"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X034",
+   "b": "X115",
+   "variant": "typo",
+   "names": [
+    "Andrii Muller",
+    "Andrii Mullr"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X065",
+   "b": "X116",
+   "variant": "initial",
+   "names": [
+    "Maksym Ivanenko",
+    "M. Ivanenko"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X023",
+   "b": "X117",
+   "variant": "initial",
+   "names": [
+    "Lukas Kowalski",
+    "L. Kowalski"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X079",
+   "b": "X118",
+   "variant": "typo",
+   "names": [
+    "Viktor Boyko",
+    "Vitkor Boyko"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X080",
+   "b": "X119",
+   "variant": "case",
+   "names": [
+    "Olena Nowak",
+    "OLENA NOWAK"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X007",
+   "b": "X120",
+   "variant": "order",
+   "names": [
+    "Julia Schmidt",
+    "Schmidt Julia"
+   ]
+  },
+  {
+   "entity": "airport",
+   "a": "KIV",
+   "b": "kiv_b",
+   "variant": "typo",
+   "names": [
+    "Chisinau International",
+    "Chisinaau International"
+   ]
+  },
+  {
+   "entity": "airport",
+   "a": "CPH",
+   "b": "cph_b",
+   "variant": "typo",
+   "names": [
+    "Copenhagen Kastrup",
+    "Copenhagen Kasteup"
+   ]
+  },
+  {
+   "entity": "airport",
+   "a": "PRG",
+   "b": "prg_b",
+   "variant": "typo",
+   "names": [
+    "Prague Vaclav Havel",
+    "Prague aclav Havel"
+   ]
+  },
+  {
+   "entity": "airport",
+   "a": "ATH",
+   "b": "ath_b",
+   "variant": "typo",
+   "names": [
+    "Athens Eleftherios Venizelos",
+    "Athens Eleftherios Vennizelos"
+   ]
+  },
+  {
+   "entity": "airport",
+   "a": "WMI",
+   "b": "wmi_b",
+   "variant": "suffix",
+   "names": [
+    "Warsaw Modlin",
+    "Warsaw Modlin International Airport"
+   ]
+  },
+  {
+   "entity": "airport",
+   "a": "RZE",
+   "b": "rze_b",
+   "variant": "suffix",
+   "names": [
+    "Rzeszow Jasionka",
+    "Rzeszow Jasionka International Airport"
+   ]
+  },
+  {
+   "entity": "airport",
+   "a": "KRK",
+   "b": "krk_b",
+   "variant": "typo",
+   "names": [
+    "Krakow John Paul II",
+    "Krakow John Payl II"
+   ]
+  },
+  {
+   "entity": "airport",
+   "a": "GDN",
+   "b": "gdn_b",
+   "variant": "typo",
+   "names": [
+    "Gdansk Lech Walesa",
+    "Gdansk Lech Wslesa"
+   ]
+  },
+  {
+   "entity": "aircraft",
+   "a": "AL-012",
+   "b": "AL012",
+   "variant": "format",
+   "names": [
+    "AL-012",
+    "AL012"
+   ]
+  },
+  {
+   "entity": "aircraft",
+   "a": "BC-020",
+   "b": "bc-020",
+   "variant": "format",
+   "names": [
+    "BC-020",
+    "bc-020"
+   ]
+  },
+  {
+   "entity": "aircraft",
+   "a": "DJ-026",
+   "b": "DJ026",
+   "variant": "format",
+   "names": [
+    "DJ-026",
+    "DJ026"
+   ]
+  },
+  {
+   "entity": "aircraft",
+   "a": "MS-036",
+   "b": "ms-036",
+   "variant": "format",
+   "names": [
+    "MS-036",
+    "ms-036"
+   ]
+  }
+ ],
+ "decoy_pairs": [
+  {
+   "entity": "passenger",
+   "a": "X030",
+   "b": "X121",
+   "names": [
+    "Taras Melnyk",
+    "Daryna Melnyk"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X010",
+   "b": "X122",
+   "names": [
+    "Sofiia Tkachenko",
+    "Julia Tkachenko"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X078",
+   "b": "X123",
+   "names": [
+    "Andrii Polishchuk",
+    "Agnieszka Polishchuk"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X072",
+   "b": "X124",
+   "names": [
+    "Klara Lysenko",
+    "Taras Lysenko"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X024",
+   "b": "X125",
+   "names": [
+    "Sofiia Kowalski",
+    "Julia Kowalski"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X063",
+   "b": "X126",
+   "names": [
+    "Iryna Wojcik",
+    "Katarzyna Wojcik"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X028",
+   "b": "X127",
+   "names": [
+    "Piotr Wisniewski",
+    "Viktor Wisniewski"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X022",
+   "b": "X128",
+   "names": [
+    "Yulia Fischer",
+    "Julia Fischer"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X075",
+   "b": "X129",
+   "names": [
+    "Olena Polishchuk",
+    "Oleh Polishchuk"
+   ]
+  },
+  {
+   "entity": "passenger",
+   "a": "X018",
+   "b": "X130",
+   "names": [
+    "Piotr Weber",
+    "Viktor Weber"
+   ]
+  },
+  {
+   "entity": "pilot",
+   "a": "P039",
+   "b": "P055",
+   "names": [
+    "Sofiia Savchenko",
+    "Stefan Savchenko"
+   ]
+  },
+  {
+   "entity": "pilot",
+   "a": "P005",
+   "b": "P056",
+   "names": [
+    "Thomas Muller",
+    "Lukas Muller"
+   ]
+  },
+  {
+   "entity": "pilot",
+   "a": "P024",
+   "b": "P057",
+   "names": [
+    "Marek Kowalski",
+    "Maksym Kowalski"
+   ]
+  },
+  {
+   "entity": "pilot",
+   "a": "P013",
+   "b": "P058",
+   "names": [
+    "Jan Melnyk",
+    "Hanna Melnyk"
+   ]
+  }
+ ],
+ "mirrors": [
+  {
+   "original": "en_aircraft_ground_handling",
+   "mirror": "en_aircraft_ground_handling_mirror",
+   "value_conflict": {
+    "original": "According to the International Air Transport Association (IATA), conservative estimates indicate airlines outsource more than 50 per cent of the ground handling that takes place at the world's airports.",
+    "mirror": "According to the International Air Transport Association (IATA), conservative estimates indicate airlines outsource more than 25 per cent of the ground handling that takes place at the world's airports.",
+    "old": 50,
+    "new": 25
+   }
+  },
+  {
+   "original": "en_airline",
+   "mirror": "en_airline_mirror",
+   "value_conflict": {
+    "original": "Legacy carriers, US carriers that predate the Airline Deregulation Act of 1978.",
+    "mirror": "Legacy carriers, US carriers that predate the Airline Deregulation Act of 1980.",
+    "old": 1978,
+    "new": 1980
+   }
+  },
+  {
+   "original": "en_airline_hub",
+   "mirror": "en_airline_hub_mirror",
+   "value_conflict": {
+    "original": "Sheikh Mohammed proceeded to establish a new airline based in Dubai, Emirates, which launched operations in 1985.",
+    "mirror": "Sheikh Mohammed proceeded to establish a new airline based in Dubai, Emirates, which launched operations in 1982.",
+    "old": 1985,
+    "new": 1982
+   }
+  },
+  {
+   "original": "en_eurocontrol",
+   "mirror": "en_eurocontrol_mirror",
+   "value_conflict": {
+    "original": "The average flight duration is approximately 21 minutes",
+    "mirror": "The average flight duration is approximately 10 minutes",
+    "old": 21,
+    "new": 10
+   }
+  },
+  {
+   "original": "en_icao_airport_code",
+   "mirror": "en_icao_airport_code_mirror",
+   "value_conflict": null
+  },
+  {
+   "original": "en_revenue_management",
+   "mirror": "en_revenue_management_mirror",
+   "value_conflict": null
+  }
+ ],
+ "defects": [
+  {
+   "id": "D001",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "P041",
+    "P045"
+   ],
+   "detail": "дубль пілота (initial): «Thomas Schmidt» ~ «T. Schmidt»; 4 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D002",
+   "type": "value_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "P041",
+    "P045"
+   ],
+   "detail": "flightHours: 7430 vs 7002"
+  },
+  {
+   "id": "D003",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "P008",
+    "P046"
+   ],
+   "detail": "дубль пілота (typo): «Oleh Savchenko» ~ «Oeh Savchenko»; 2 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D004",
+   "type": "value_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "P008",
+    "P046"
+   ],
+   "detail": "flightHours: 4757 vs 5076"
+  },
+  {
+   "id": "D005",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "P002",
+    "P047"
+   ],
+   "detail": "дубль пілота (case): «Yulia Kowalski» ~ «YULIA KOWALSKI»; 4 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D006",
+   "type": "value_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "P002",
+    "P047"
+   ],
+   "detail": "flightHours: 5512 vs 5133"
+  },
+  {
+   "id": "D007",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "P018",
+    "P048"
+   ],
+   "detail": "дубль пілота (initial): «Olena Schmidt» ~ «O. Schmidt»; 4 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D008",
+   "type": "value_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "P018",
+    "P048"
+   ],
+   "detail": "flightHours: 2791 vs 3087"
+  },
+  {
+   "id": "D009",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "P016",
+    "P049"
+   ],
+   "detail": "дубль пілота (initial): «Katarzyna Lysenko» ~ «K. Lysenko»; 4 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D010",
+   "type": "value_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "P016",
+    "P049"
+   ],
+   "detail": "flightHours: 5833 vs 5195"
+  },
+  {
+   "id": "D011",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "P015",
+    "P050"
+   ],
+   "detail": "дубль пілота (order): «Marek Shevchenko» ~ «Shevchenko Marek»; 2 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D012",
+   "type": "value_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "P015",
+    "P050"
+   ],
+   "detail": "flightHours: 7381 vs 8090"
+  },
+  {
+   "id": "D013",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "P009",
+    "P051"
+   ],
+   "detail": "дубль пілота (initial): «Viktor Savchenko» ~ «V. Savchenko»; 4 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D014",
+   "type": "value_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "P009",
+    "P051"
+   ],
+   "detail": "flightHours: 8373 vs 8888"
+  },
+  {
+   "id": "D015",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "P007",
+    "P052"
+   ],
+   "detail": "дубль пілота (order): «Sofiia Hrytsenko» ~ «Hrytsenko Sofiia»; 2 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D016",
+   "type": "value_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "P007",
+    "P052"
+   ],
+   "detail": "flightHours: 11363 vs 11877"
+  },
+  {
+   "id": "D017",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "P035",
+    "P053"
+   ],
+   "detail": "дубль пілота (typo): «Andrii Kravchuk» ~ «Andrrii Kravchuk»; 2 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D018",
+   "type": "value_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "P035",
+    "P053"
+   ],
+   "detail": "flightHours: 10792 vs 10147"
+  },
+  {
+   "id": "D019",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "P006",
+    "P054"
+   ],
+   "detail": "дубль пілота (typo): «Oleh Bondar» ~ «Oleh Bodar»; 4 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D020",
+   "type": "value_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "P006",
+    "P054"
+   ],
+   "detail": "flightHours: 5082 vs 4671"
+  },
+  {
+   "id": "D021",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X020",
+    "X091"
+   ],
+   "detail": "дубль пасажира (case): «Agnieszka Savchenko» ~ «AGNIESZKA SAVCHENKO»; 2 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D022",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X081",
+    "X092"
+   ],
+   "detail": "дубль пасажира (order): «Daryna Lysenko» ~ «Lysenko Daryna»; 4 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D023",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X021",
+    "X093"
+   ],
+   "detail": "дубль пасажира (order): «Lukas Tkachenko» ~ «Tkachenko Lukas»; 4 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D024",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X055",
+    "X094"
+   ],
+   "detail": "дубль пасажира (initial): «Daryna Kovalenko» ~ «D. Kovalenko»; 3 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D025",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X077",
+    "X095"
+   ],
+   "detail": "дубль пасажира (initial): «Marek Kravchuk» ~ «M. Kravchuk»; 3 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D026",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X009",
+    "X096"
+   ],
+   "detail": "дубль пасажира (typo): «Olena Muller» ~ «Olna Muller»; 2 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D027",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X050",
+    "X097"
+   ],
+   "detail": "дубль пасажира (translit): «Yulia Tkachenko» ~ «Yuliia Tkachenko»; 3 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D028",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X049",
+    "X098"
+   ],
+   "detail": "дубль пасажира (initial): «Daryna Schmidt» ~ «D. Schmidt»; 3 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D029",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X086",
+    "X099"
+   ],
+   "detail": "дубль пасажира (typo): «Oleh Muller» ~ «Oleh uller»; 4 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D030",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X060",
+    "X100"
+   ],
+   "detail": "дубль пасажира (initial): «Piotr Schmidt» ~ «P. Schmidt»; 2 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D031",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X068",
+    "X101"
+   ],
+   "detail": "дубль пасажира (typo): «Klara Melnyk» ~ «Klraa Melnyk»; 4 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D032",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X033",
+    "X102"
+   ],
+   "detail": "дубль пасажира (initial): «Viktor Kravchuk» ~ «V. Kravchuk»; 3 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D033",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X071",
+    "X103"
+   ],
+   "detail": "дубль пасажира (case): «Katarzyna Tkachenko» ~ «KATARZYNA TKACHENKO»; 3 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D034",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X002",
+    "X104"
+   ],
+   "detail": "дубль пасажира (translit): «Sofiia Fischer» ~ «Sofiya Fischer»; 4 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D035",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X015",
+    "X105"
+   ],
+   "detail": "дубль пасажира (case): «Taras Weber» ~ «TARAS WEBER»; 2 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D036",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X069",
+    "X106"
+   ],
+   "detail": "дубль пасажира (typo): «Julia Shevchenko» ~ «Julia Shwvchenko»; 3 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D037",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X035",
+    "X107"
+   ],
+   "detail": "дубль пасажира (order): «Agnieszka Wisniewski» ~ «Wisniewski Agnieszka»; 3 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D038",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X044",
+    "X108"
+   ],
+   "detail": "дубль пасажира (case): «Hanna Savchenko» ~ «HANNA SAVCHENKO»; 4 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D039",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X076",
+    "X109"
+   ],
+   "detail": "дубль пасажира (case): «Oleh Nowak» ~ «OLEH NOWAK»; 4 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D040",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X038",
+    "X110"
+   ],
+   "detail": "дубль пасажира (order): «Mykola Muller» ~ «Muller Mykola»; 4 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D041",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X056",
+    "X111"
+   ],
+   "detail": "дубль пасажира (typo): «Natalia Ivanenko» ~ «Natalia Ivanenok»; 3 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D042",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X088",
+    "X112"
+   ],
+   "detail": "дубль пасажира (case): «Agnieszka Tkachenko» ~ «AGNIESZKA TKACHENKO»; 4 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D043",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X059",
+    "X113"
+   ],
+   "detail": "дубль пасажира (order): «Lukas Wisniewski» ~ «Wisniewski Lukas»; 3 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D044",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X001",
+    "X114"
+   ],
+   "detail": "дубль пасажира (typo): «Oleh Ivanenko» ~ «Olehh Ivanenko»; 2 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D045",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X034",
+    "X115"
+   ],
+   "detail": "дубль пасажира (typo): «Andrii Muller» ~ «Andrii Mullr»; 4 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D046",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X065",
+    "X116"
+   ],
+   "detail": "дубль пасажира (initial): «Maksym Ivanenko» ~ «M. Ivanenko»; 4 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D047",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X023",
+    "X117"
+   ],
+   "detail": "дубль пасажира (initial): «Lukas Kowalski» ~ «L. Kowalski»; 3 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D048",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X079",
+    "X118"
+   ],
+   "detail": "дубль пасажира (typo): «Viktor Boyko» ~ «Vitkor Boyko»; 2 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D049",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X080",
+    "X119"
+   ],
+   "detail": "дубль пасажира (case): «Olena Nowak» ~ «OLENA NOWAK»; 3 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D050",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "X007",
+    "X120"
+   ],
+   "detail": "дубль пасажира (order): «Julia Schmidt» ~ «Schmidt Julia»; 2 рейс(ів) перенесено на дубль"
+  },
+  {
+   "id": "D051",
+   "type": "logical_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "KIV",
+    "kiv_b"
+   ],
+   "detail": "locatedIn: chisinau vs lviv для одного аеропорту"
+  },
+  {
+   "id": "D052",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "KIV",
+    "kiv_b"
+   ],
+   "detail": "дубль аеропорту (typo): «Chisinau International» ~ «Chisinaau International»"
+  },
+  {
+   "id": "D053",
+   "type": "logical_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "CPH",
+    "cph_b"
+   ],
+   "detail": "locatedIn: copenhagen vs dublin для одного аеропорту"
+  },
+  {
+   "id": "D054",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "CPH",
+    "cph_b"
+   ],
+   "detail": "дубль аеропорту (typo): «Copenhagen Kastrup» ~ «Copenhagen Kasteup»"
+  },
+  {
+   "id": "D055",
+   "type": "logical_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "PRG",
+    "prg_b"
+   ],
+   "detail": "locatedIn: prague vs warsaw для одного аеропорту"
+  },
+  {
+   "id": "D056",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "PRG",
+    "prg_b"
+   ],
+   "detail": "дубль аеропорту (typo): «Prague Vaclav Havel» ~ «Prague aclav Havel»"
+  },
+  {
+   "id": "D057",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "ATH",
+    "ath_b"
+   ],
+   "detail": "дубль аеропорту (typo): «Athens Eleftherios Venizelos» ~ «Athens Eleftherios Vennizelos»"
+  },
+  {
+   "id": "D058",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "WMI",
+    "wmi_b"
+   ],
+   "detail": "дубль аеропорту (suffix): «Warsaw Modlin» ~ «Warsaw Modlin International Airport»"
+  },
+  {
+   "id": "D059",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "RZE",
+    "rze_b"
+   ],
+   "detail": "дубль аеропорту (suffix): «Rzeszow Jasionka» ~ «Rzeszow Jasionka International Airport»"
+  },
+  {
+   "id": "D060",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "KRK",
+    "krk_b"
+   ],
+   "detail": "дубль аеропорту (typo): «Krakow John Paul II» ~ «Krakow John Payl II»"
+  },
+  {
+   "id": "D061",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "GDN",
+    "gdn_b"
+   ],
+   "detail": "дубль аеропорту (typo): «Gdansk Lech Walesa» ~ «Gdansk Lech Wslesa»"
+  },
+  {
+   "id": "D062",
+   "type": "value_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "AL-012",
+    "AL012"
+   ],
+   "detail": "seatCapacity: 0 vs -6"
+  },
+  {
+   "id": "D063",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "AL-012",
+    "AL012"
+   ],
+   "detail": "дубль літака (формат реєстрації): AL-012 ~ AL012"
+  },
+  {
+   "id": "D064",
+   "type": "value_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "BC-020",
+    "bc-020"
+   ],
+   "detail": "seatCapacity: 145 vs 153"
+  },
+  {
+   "id": "D065",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "BC-020",
+    "bc-020"
+   ],
+   "detail": "дубль літака (формат реєстрації): BC-020 ~ bc-020"
+  },
+  {
+   "id": "D066",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "DJ-026",
+    "DJ026"
+   ],
+   "detail": "дубль літака (формат реєстрації): DJ-026 ~ DJ026"
+  },
+  {
+   "id": "D067",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "MS-036",
+    "ms-036"
+   ],
+   "detail": "дубль літака (формат реєстрації): MS-036 ~ ms-036"
+  },
+  {
+   "id": "D068",
+   "type": "temporal_conflict",
+   "dimension": "актуальність",
+   "refs": [
+    "BC116-20261102"
+   ],
+   "detail": "usesAircraft: bc-020 (validFrom 2026-11-02) vs AW-031 (legacy-roster, validFrom 2026-10-20)"
+  },
+  {
+   "id": "D069",
+   "type": "temporal_conflict",
+   "dimension": "актуальність",
+   "refs": [
+    "DJ107-20261102"
+   ],
+   "detail": "usesAircraft: DJ-027 (validFrom 2026-11-02) vs AW-032 (legacy-roster, validFrom 2026-10-20)"
+  },
+  {
+   "id": "D070",
+   "type": "temporal_conflict",
+   "dimension": "актуальність",
+   "refs": [
+    "AL110-20261103"
+   ],
+   "detail": "usesAircraft: AL-009 (validFrom 2026-11-03) vs AW-030 (legacy-roster, validFrom 2026-10-20)"
+  },
+  {
+   "id": "D071",
+   "type": "value_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "EN117-20261103"
+   ],
+   "detail": "operatedBy: EN (generator, 1.0) vs CA (codeshare-feed, 0.6)"
+  },
+  {
+   "id": "D072",
+   "type": "value_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "SU118-20261103"
+   ],
+   "detail": "operatedBy: SU (generator, 1.0) vs CA (codeshare-feed, 0.6)"
+  },
+  {
+   "id": "D073",
+   "type": "value_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "DJ108-20261103"
+   ],
+   "detail": "operatedBy: DJ (generator, 1.0) vs SU (codeshare-feed, 0.6)"
+  },
+  {
+   "id": "D074",
+   "type": "logical_conflict",
+   "dimension": "точність",
+   "refs": [
+    "MS106-20261103"
+   ],
+   "detail": "departsFrom = arrivesAt = BUD (було arrivesAt MAD)"
+  },
+  {
+   "id": "D075",
+   "type": "logical_conflict",
+   "dimension": "точність",
+   "refs": [
+    "BC116-20261103"
+   ],
+   "detail": "departsFrom = arrivesAt = HEL (було arrivesAt RIX)"
+  },
+  {
+   "id": "D076",
+   "type": "logical_conflict",
+   "dimension": "точність",
+   "refs": [
+    "SU114-20261102"
+   ],
+   "detail": "departsFrom = arrivesAt = IEV (було arrivesAt LWO)"
+  },
+  {
+   "id": "D077",
+   "type": "logical_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "AL106-20261102"
+   ],
+   "detail": "date 2026-11-03 ≠ дата в scheduledDeparture 2026-11-02"
+  },
+  {
+   "id": "D078",
+   "type": "logical_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "MS105-20261103"
+   ],
+   "detail": "date 2026-11-04 ≠ дата в scheduledDeparture 2026-11-03"
+  },
+  {
+   "id": "D079",
+   "type": "logical_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "BC105-20261102"
+   ],
+   "detail": "date 2026-11-03 ≠ дата в scheduledDeparture 2026-11-02"
+  },
+  {
+   "id": "D080",
+   "type": "logical_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "AW105-20261102"
+   ],
+   "detail": "date 2026-11-03 ≠ дата в scheduledDeparture 2026-11-02"
+  },
+  {
+   "id": "D081",
+   "type": "terminology_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "SU-001"
+   ],
+   "detail": "model: «Airbus A320» → «A320» (інша назва того ж типу)"
+  },
+  {
+   "id": "D082",
+   "type": "terminology_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "SU-002"
+   ],
+   "detail": "model: «Airbus A220-300» → «Airbus A220» (інша назва того ж типу)"
+  },
+  {
+   "id": "D083",
+   "type": "terminology_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "SU-003"
+   ],
+   "detail": "model: «Boeing 737-800» → «B737-800» (інша назва того ж типу)"
+  },
+  {
+   "id": "D084",
+   "type": "terminology_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "SU-004"
+   ],
+   "detail": "model: «Embraer E190» → «Embraer 190» (інша назва того ж типу)"
+  },
+  {
+   "id": "D085",
+   "type": "terminology_conflict",
+   "dimension": "узгодженість",
+   "refs": [
+    "SU-005"
+   ],
+   "detail": "model: «ATR 72-600» → «ATR72-600» (інша назва того ж типу)"
+  },
+  {
+   "id": "D086",
+   "type": "missing_value",
+   "dimension": "повнота",
+   "refs": [
+    "CA-015"
+   ],
+   "detail": "seatCapacity порожнє (було 100)"
+  },
+  {
+   "id": "D087",
+   "type": "missing_value",
+   "dimension": "повнота",
+   "refs": [
+    "AL012"
+   ],
+   "detail": "seatCapacity порожнє (було -6)"
+  },
+  {
+   "id": "D088",
+   "type": "missing_value",
+   "dimension": "повнота",
+   "refs": [
+    "EN-023"
+   ],
+   "detail": "seatCapacity порожнє (було 189)"
+  },
+  {
+   "id": "D089",
+   "type": "missing_value",
+   "dimension": "повнота",
+   "refs": [
+    "AL-009"
+   ],
+   "detail": "seatCapacity порожнє (було 180)"
+  },
+  {
+   "id": "D090",
+   "type": "missing_value",
+   "dimension": "повнота",
+   "refs": [
+    "MS-035"
+   ],
+   "detail": "seatCapacity порожнє (було 100)"
+  },
+  {
+   "id": "D091",
+   "type": "missing_value",
+   "dimension": "повнота",
+   "refs": [
+    "AL-008"
+   ],
+   "detail": "seatCapacity порожнє (було 70)"
+  },
+  {
+   "id": "D092",
+   "type": "missing_value",
+   "dimension": "повнота",
+   "refs": [
+    "P034"
+   ],
+   "detail": "flightHours порожнє (було 6668)"
+  },
+  {
+   "id": "D093",
+   "type": "missing_value",
+   "dimension": "повнота",
+   "refs": [
+    "P042"
+   ],
+   "detail": "flightHours порожнє (було 2989)"
+  },
+  {
+   "id": "D094",
+   "type": "missing_value",
+   "dimension": "повнота",
+   "refs": [
+    "P010"
+   ],
+   "detail": "flightHours порожнє (було 11154)"
+  },
+  {
+   "id": "D095",
+   "type": "missing_value",
+   "dimension": "повнота",
+   "refs": [
+    "P047"
+   ],
+   "detail": "flightHours порожнє (було 5133)"
+  },
+  {
+   "id": "D096",
+   "type": "missing_value",
+   "dimension": "повнота",
+   "refs": [
+    "SU117-20261102"
+   ],
+   "detail": "kind порожнє (було passenger)"
+  },
+  {
+   "id": "D097",
+   "type": "missing_value",
+   "dimension": "повнота",
+   "refs": [
+    "BC103-20261102"
+   ],
+   "detail": "kind порожнє (було passenger)"
+  },
+  {
+   "id": "D098",
+   "type": "missing_value",
+   "dimension": "повнота",
+   "refs": [
+    "EN103-20261102"
+   ],
+   "detail": "kind порожнє (було passenger)"
+  },
+  {
+   "id": "D099",
+   "type": "missing_value",
+   "dimension": "повнота",
+   "refs": [
+    "DJ105-20261103"
+   ],
+   "detail": "kind порожнє (було passenger)"
+  },
+  {
+   "id": "D100",
+   "type": "invalid_value",
+   "dimension": "валідність",
+   "refs": [
+    "P012"
+   ],
+   "detail": "flightHours = -7074 (було 7074)"
+  },
+  {
+   "id": "D101",
+   "type": "invalid_value",
+   "dimension": "валідність",
+   "refs": [
+    "P025"
+   ],
+   "detail": "flightHours = -4164 (було 4164)"
+  },
+  {
+   "id": "D102",
+   "type": "invalid_value",
+   "dimension": "валідність",
+   "refs": [
+    "D016"
+   ],
+   "detail": "minutes = 9999 (було 33)"
+  },
+  {
+   "id": "D103",
+   "type": "invalid_value",
+   "dimension": "валідність",
+   "refs": [
+    "D054"
+   ],
+   "detail": "minutes = 9999 (було 60)"
+  },
+  {
+   "id": "D104",
+   "type": "invalid_value",
+   "dimension": "валідність",
+   "refs": [
+    "RK10"
+   ],
+   "detail": "level = 7 поза діапазоном 1–5 (було 4)"
+  },
+  {
+   "id": "D105",
+   "type": "missing_provenance",
+   "dimension": "походження",
+   "refs": [
+    "rel_has_passenger"
+   ],
+   "detail": "12 зв'язків без source"
+  },
+  {
+   "id": "D106",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "en_aircraft_ground_handling",
+    "en_aircraft_ground_handling_mirror"
+   ],
+   "detail": "дзеркало статті (стара копія 2025-03-12, дрібні редагування)"
+  },
+  {
+   "id": "D107",
+   "type": "stale",
+   "dimension": "актуальність",
+   "refs": [
+    "en_aircraft_ground_handling_mirror"
+   ],
+   "detail": "date 2025-03-12 (оригінал 2026-10-31)"
+  },
+  {
+   "id": "D108",
+   "type": "value_conflict",
+   "dimension": "точність",
+   "refs": [
+    "en_aircraft_ground_handling",
+    "en_aircraft_ground_handling_mirror"
+   ],
+   "detail": "число 50 → 25: «According to the International Air Transport Association (IATA), conservative estimates in…»"
+  },
+  {
+   "id": "D109",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "en_airline",
+    "en_airline_mirror"
+   ],
+   "detail": "дзеркало статті (стара копія 2025-03-12, дрібні редагування)"
+  },
+  {
+   "id": "D110",
+   "type": "stale",
+   "dimension": "актуальність",
+   "refs": [
+    "en_airline_mirror"
+   ],
+   "detail": "date 2025-03-12 (оригінал 2026-10-31)"
+  },
+  {
+   "id": "D111",
+   "type": "value_conflict",
+   "dimension": "точність",
+   "refs": [
+    "en_airline",
+    "en_airline_mirror"
+   ],
+   "detail": "число 1978 → 1980: «Legacy carriers, US carriers that predate the Airline Deregulation Act of 1978.…»"
+  },
+  {
+   "id": "D112",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "en_airline_hub",
+    "en_airline_hub_mirror"
+   ],
+   "detail": "дзеркало статті (стара копія 2025-03-12, дрібні редагування)"
+  },
+  {
+   "id": "D113",
+   "type": "stale",
+   "dimension": "актуальність",
+   "refs": [
+    "en_airline_hub_mirror"
+   ],
+   "detail": "date 2025-03-12 (оригінал 2026-10-31)"
+  },
+  {
+   "id": "D114",
+   "type": "value_conflict",
+   "dimension": "точність",
+   "refs": [
+    "en_airline_hub",
+    "en_airline_hub_mirror"
+   ],
+   "detail": "число 1985 → 1982: «Sheikh Mohammed proceeded to establish a new airline based in Dubai, Emirates, which launc…»"
+  },
+  {
+   "id": "D115",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "en_eurocontrol",
+    "en_eurocontrol_mirror"
+   ],
+   "detail": "дзеркало статті (стара копія 2025-03-12, дрібні редагування)"
+  },
+  {
+   "id": "D116",
+   "type": "stale",
+   "dimension": "актуальність",
+   "refs": [
+    "en_eurocontrol_mirror"
+   ],
+   "detail": "date 2025-03-12 (оригінал 2026-10-31)"
+  },
+  {
+   "id": "D117",
+   "type": "value_conflict",
+   "dimension": "точність",
+   "refs": [
+    "en_eurocontrol",
+    "en_eurocontrol_mirror"
+   ],
+   "detail": "число 21 → 10: «The average flight duration is approximately 21 minutes…»"
+  },
+  {
+   "id": "D118",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "en_icao_airport_code",
+    "en_icao_airport_code_mirror"
+   ],
+   "detail": "дзеркало статті (стара копія 2025-03-12, дрібні редагування)"
+  },
+  {
+   "id": "D119",
+   "type": "stale",
+   "dimension": "актуальність",
+   "refs": [
+    "en_icao_airport_code_mirror"
+   ],
+   "detail": "date 2025-03-12 (оригінал 2026-10-31)"
+  },
+  {
+   "id": "D120",
+   "type": "inconsistent_metadata",
+   "dimension": "походження",
+   "refs": [
+    "en_icao_airport_code_mirror"
+   ],
+   "detail": "немає license/sensitivity у front matter; дефолти build_corpus: «own work» / internal"
+  },
+  {
+   "id": "D121",
+   "type": "duplicate",
+   "dimension": "унікальність",
+   "refs": [
+    "en_revenue_management",
+    "en_revenue_management_mirror"
+   ],
+   "detail": "дзеркало статті (стара копія 2025-03-12, дрібні редагування)"
+  },
+  {
+   "id": "D122",
+   "type": "stale",
+   "dimension": "актуальність",
+   "refs": [
+    "en_revenue_management_mirror"
+   ],
+   "detail": "date 2025-03-12 (оригінал 2026-10-31)"
+  },
+  {
+   "id": "D123",
+   "type": "inconsistent_metadata",
+   "dimension": "походження",
+   "refs": [
+    "en_revenue_management_mirror"
+   ],
+   "detail": "немає license/sensitivity у front matter; дефолти build_corpus: «own work» / internal"
+  }
+ ]
+}

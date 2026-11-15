@@ -1,0 +1,152 @@
+{
+  "embedder": "e5",
+  "threshold": 0.83,
+  "test_pairs": 59,
+  "test_positive": 26,
+  "test": {
+    "precision": 0.96,
+    "recall": 0.923,
+    "f1": 0.941,
+    "tp": 24,
+    "fp": 1,
+    "fn": 2
+  },
+  "test_precision_ci95": [
+    0.805,
+    0.993
+  ],
+  "test_recall_ci95": [
+    0.759,
+    0.979
+  ],
+  "by_type": {
+    "aircraft": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "airport": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.857,
+      "tp": 3,
+      "fp": 0,
+      "fn": 1
+    },
+    "passenger": {
+      "precision": 0.933,
+      "recall": 0.933,
+      "f1": 0.933,
+      "tp": 14,
+      "fp": 1,
+      "fn": 1
+    },
+    "pilot": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 5,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "uncertain_pairs": 5,
+  "errors": [
+    {
+      "pair": "G025",
+      "type": "airport",
+      "label": 1,
+      "decision": "non-match",
+      "score": 0.743,
+      "names": [
+        "Prague Vaclav Havel",
+        "Prague aclav Havel"
+      ],
+      "kind": "duplicate-typo"
+    },
+    {
+      "pair": "G054",
+      "type": "passenger",
+      "label": 0,
+      "decision": "match",
+      "score": 0.906,
+      "names": [
+        "Julia Shevchenko",
+        "Yulia Shevchenko"
+      ],
+      "kind": "hard-natural"
+    },
+    {
+      "pair": "G070",
+      "type": "passenger",
+      "label": 1,
+      "decision": "uncertain",
+      "score": 0.797,
+      "names": [
+        "Daryna Schmidt",
+        "D. Schmidt"
+      ],
+      "kind": "duplicate-initial"
+    }
+  ],
+  "blocking": {
+    "positives_in_test": 26,
+    "kept_by_blocking": 26,
+    "recall": 1.0
+  },
+  "with_llm_judge": {
+    "judged": 5,
+    "precision": 0.962,
+    "recall": 0.962,
+    "f1": 0.962,
+    "tp": 25,
+    "fp": 1,
+    "fn": 1
+  },
+  "end_to_end_vs_ground_truth": {
+    "precision": 0.909,
+    "recall": 0.962,
+    "f1": 0.935,
+    "tp": 50,
+    "fp": 5,
+    "fn": 2,
+    "candidates": 1990,
+    "all_pairs": 12471,
+    "reduction": 0.8404,
+    "missed": [
+      [
+        "X049",
+        "X098"
+      ],
+      [
+        "PRG",
+        "prg_b"
+      ]
+    ],
+    "false_pos": [
+      [
+        "X069",
+        "X073"
+      ],
+      [
+        "X008",
+        "X090"
+      ],
+      [
+        "X050",
+        "X122"
+      ],
+      [
+        "X062",
+        "X073"
+      ],
+      [
+        "X063",
+        "X083"
+      ]
+    ]
+  }
+}

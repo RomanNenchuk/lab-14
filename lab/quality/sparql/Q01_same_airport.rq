@@ -1,0 +1,3 @@
+# Інваріант: рейс не вилітає й не прилітає в один аеропорт (логічна суперечність).
+PREFIX av: <https://example.org/aviation#>
+SELECT ?flight ?airport WHERE { ?flight av:departsFrom ?airport ; av:arrivesAt ?airport . }

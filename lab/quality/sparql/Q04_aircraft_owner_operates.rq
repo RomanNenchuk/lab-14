@@ -1,0 +1,7 @@
+# Інваріант: літак рейсу належить авіакомпанії, яка виконує рейс.
+PREFIX av: <https://example.org/aviation#>
+SELECT ?flight ?aircraft ?owner ?operator WHERE {
+  ?flight av:usesAircraft ?aircraft ; av:operatedBy ?operator .
+  ?aircraft av:ownedBy ?owner .
+  FILTER (?owner != ?operator)
+}

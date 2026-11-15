@@ -1,0 +1,7 @@
+# Інваріант: наступний рейс ланцюга вилітає з аеропорту, куди прилетів попередній.
+PREFIX av: <https://example.org/aviation#>
+SELECT ?leg1 ?leg2 ?arr ?dep WHERE {
+  ?leg1 av:nextLeg ?leg2 ; av:arrivesAt ?arr .
+  ?leg2 av:departsFrom ?dep .
+  FILTER (?arr != ?dep)
+}

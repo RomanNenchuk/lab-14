@@ -1,0 +1,121 @@
+pair_id,entity_type,id_a,id_b,name_a,name_b,label,pair_kind,label_source,split,human_check
+G001,airport,WMI,wmi_b,Warsaw Modlin,Warsaw Modlin International Airport,1,duplicate-suffix,injection,test,ok
+G002,airport,GDN,gdn_b,Gdansk Lech Walesa,Gdansk Lech Wslesa,1,duplicate-typo,injection,dev,ok
+G003,pilot,P016,P049,Katarzyna Lysenko,K. Lysenko,1,duplicate-initial,injection,dev,ok
+G004,passenger,X072,X124,Klara Lysenko,Taras Lysenko,0,decoy,injection,dev,ok
+G005,passenger,X035,X107,Agnieszka Wisniewski,Wisniewski Agnieszka,1,duplicate-order,injection,dev,ok
+G006,pilot,P024,P057,Marek Kowalski,Maksym Kowalski,0,decoy,injection,dev,ok
+G007,passenger,X020,X088,Agnieszka Savchenko,Agnieszka Tkachenko,0,hard-natural,auto-hard,dev,ok
+G008,passenger,X020,X091,Agnieszka Savchenko,AGNIESZKA SAVCHENKO,1,duplicate-case,injection,dev,ok
+G009,airport,KIV,kiv_b,Chisinau International,Chisinaau International,1,duplicate-typo,injection,test,ok
+G010,aircraft,CA-013,AL012,CA-013,AL012,0,random,auto-random,test,ok
+G011,passenger,X086,X099,Oleh Muller,Oleh uller,1,duplicate-typo,injection,test,ok
+G012,pilot,P039,P055,Sofiia Savchenko,Stefan Savchenko,0,decoy,injection,dev,ok
+G013,passenger,X081,X092,Daryna Lysenko,Lysenko Daryna,1,duplicate-order,injection,dev,ok
+G014,passenger,X023,X117,Lukas Kowalski,L. Kowalski,1,duplicate-initial,injection,dev,ok
+G015,airport,VIE,WRO,Vienna,Wroclaw Copernicus,0,random,auto-random,dev,ok
+G016,pilot,P002,P006,Yulia Kowalski,Oleh Bondar,0,random,auto-random,dev,ok
+G017,passenger,X091,X054,AGNIESZKA SAVCHENKO,Thomas Polishchuk,0,random,auto-random,test,ok
+G018,pilot,P041,P045,Thomas Schmidt,T. Schmidt,1,duplicate-initial,injection,test,ok
+G019,passenger,X058,X036,Piotr Kravchuk,Hanna Weber,0,random,auto-random,dev,ok
+G020,airport,prg_b,IST,Prague aclav Havel,Istanbul Airport,0,random,auto-random,test,ok
+G021,pilot,P013,P058,Jan Melnyk,Hanna Melnyk,0,decoy,injection,dev,ok
+G022,airport,RZE,rze_b,Rzeszow Jasionka,Rzeszow Jasionka International Airport,1,duplicate-suffix,injection,dev,ok
+G023,passenger,X088,X112,Agnieszka Tkachenko,AGNIESZKA TKACHENKO,1,duplicate-case,injection,dev,ok
+G024,passenger,X088,X091,Agnieszka Tkachenko,AGNIESZKA SAVCHENKO,0,hard-natural,auto-hard,dev,ok
+G025,airport,PRG,prg_b,Prague Vaclav Havel,Prague aclav Havel,1,duplicate-typo,injection,test,ok
+G026,passenger,X021,X093,Lukas Tkachenko,Tkachenko Lukas,1,duplicate-order,injection,test,ok
+G027,passenger,X009,X096,Olena Muller,Olna Muller,1,duplicate-typo,injection,dev,ok
+G028,airport,DUS,VIE,Dusseldorf,Vienna,0,random,auto-random,dev,ok
+G029,passenger,X080,X109,Olena Nowak,OLEH NOWAK,0,hard-natural,auto-hard,test,ok
+G030,passenger,X040,X056,Viktor Kovalenko,Natalia Ivanenko,0,random,auto-random,dev,ok
+G031,passenger,X015,X105,Taras Weber,TARAS WEBER,1,duplicate-case,injection,dev,ok
+G032,pilot,P001,P032,Maksym Shevchenko,Maksym Savchenko,0,hard-natural,auto-hard,test,ok
+G033,passenger,X071,X103,Katarzyna Tkachenko,KATARZYNA TKACHENKO,1,duplicate-case,injection,dev,ok
+G034,aircraft,BC-017,EN-025,BC-017,EN-025,0,random,auto-random,dev,ok
+G035,passenger,X024,X125,Sofiia Kowalski,Julia Kowalski,0,decoy,injection,test,ok
+G036,airport,VNO,VIE,Vilnius International,Vienna,0,random,auto-random,dev,ok
+G037,passenger,X056,X111,Natalia Ivanenko,Natalia Ivanenok,1,duplicate-typo,injection,dev,ok
+G038,passenger,X010,X122,Sofiia Tkachenko,Julia Tkachenko,0,decoy,injection,test,ok
+G039,passenger,X128,X102,Julia Fischer,V. Kravchuk,0,random,auto-random,dev,ok
+G040,pilot,P006,P054,Oleh Bondar,Oleh Bodar,1,duplicate-typo,injection,test,ok
+G041,passenger,X001,X114,Oleh Ivanenko,Olehh Ivanenko,1,duplicate-typo,injection,test,ok
+G042,passenger,X069,X106,Julia Shevchenko,Julia Shwvchenko,1,duplicate-typo,injection,test,ok
+G043,passenger,X091,X112,AGNIESZKA SAVCHENKO,AGNIESZKA TKACHENKO,0,hard-natural,auto-hard,dev,ok
+G044,passenger,X076,X109,Oleh Nowak,OLEH NOWAK,1,duplicate-case,injection,dev,ok
+G045,aircraft,DJ-029,AL012,DJ-029,AL012,0,random,auto-random,test,ok
+G046,airport,FRA,ZAG,Frankfurt am Main,Zagreb Franjo Tudman,0,hard-natural,auto-hard,dev,ok
+G047,pilot,P015,P050,Marek Shevchenko,Shevchenko Marek,1,duplicate-order,injection,dev,ok
+G048,aircraft,AL-012,SU-006,AL-012,SU-006,0,random,auto-random,dev,ok
+G049,pilot,P029,P032,Maksym Tkachenko,Maksym Savchenko,0,hard-natural,auto-hard,test,ok
+G050,passenger,X007,X120,Julia Schmidt,Schmidt Julia,1,duplicate-order,injection,test,ok
+G051,aircraft,BC-020,bc-020,BC-020,bc-020,1,duplicate-format,injection,dev,ok
+G052,passenger,X065,X116,Maksym Ivanenko,M. Ivanenko,1,duplicate-initial,injection,test,ok
+G053,passenger,X050,X097,Yulia Tkachenko,Yuliia Tkachenko,1,duplicate-translit,injection,test,ok
+G054,passenger,X069,X073,Julia Shevchenko,Yulia Shevchenko,0,hard-natural,auto-hard,test,ok
+G055,passenger,X034,X115,Andrii Muller,Andrii Mullr,1,duplicate-typo,injection,test,ok
+G056,pilot,P018,P041,Olena Schmidt,Thomas Schmidt,0,random,auto-random,dev,ok
+G057,pilot,P007,P052,Sofiia Hrytsenko,Hrytsenko Sofiia,1,duplicate-order,injection,test,ok
+G058,airport,ATH,ath_b,Athens Eleftherios Venizelos,Athens Eleftherios Vennizelos,1,duplicate-typo,injection,dev,ok
+G059,passenger,X020,X112,Agnieszka Savchenko,AGNIESZKA TKACHENKO,0,hard-natural,auto-hard,test,ok
+G060,passenger,X050,X122,Yulia Tkachenko,Julia Tkachenko,0,hard-natural,auto-hard,dev,ok
+G061,airport,MUC,ZRH,Munich,Zurich,0,hard-natural,auto-hard,dev,ok
+G062,passenger,X044,X108,Hanna Savchenko,HANNA SAVCHENKO,1,duplicate-case,injection,test,ok
+G063,passenger,X060,X100,Piotr Schmidt,P. Schmidt,1,duplicate-initial,injection,dev,ok
+G064,pilot,P018,P052,Olena Schmidt,Hrytsenko Sofiia,0,random,auto-random,dev,ok
+G065,aircraft,bc-020,CA-015,bc-020,CA-015,0,random,auto-random,dev,ok
+G066,pilot,P035,P053,Andrii Kravchuk,Andrrii Kravchuk,1,duplicate-typo,injection,dev,ok
+G067,passenger,X055,X094,Daryna Kovalenko,D. Kovalenko,1,duplicate-initial,injection,test,ok
+G068,airport,BCN,prg_b,Barcelona El Prat,Prague aclav Havel,0,hard-natural,auto-hard,test,ok
+G069,pilot,P018,P048,Olena Schmidt,O. Schmidt,1,duplicate-initial,injection,test,ok
+G070,passenger,X049,X098,Daryna Schmidt,D. Schmidt,1,duplicate-initial,injection,test,ok
+G071,passenger,X080,X119,Olena Nowak,OLENA NOWAK,1,duplicate-case,injection,dev,ok
+G072,passenger,X055,X081,Daryna Kovalenko,Daryna Lysenko,0,random,auto-random,dev,ok
+G073,pilot,P009,P051,Viktor Savchenko,V. Savchenko,1,duplicate-initial,injection,dev,ok
+G074,passenger,X076,X119,Oleh Nowak,OLENA NOWAK,0,hard-natural,auto-hard,test,ok
+G075,airport,RIX,SOF,Riga International,Sofia,0,random,auto-random,test,ok
+G076,airport,KRK,DUS,Krakow John Paul II,Dusseldorf,0,random,auto-random,test,ok
+G077,passenger,X078,X123,Andrii Polishchuk,Agnieszka Polishchuk,0,decoy,injection,test,ok
+G078,aircraft,DJ-026,DJ026,DJ-026,DJ026,1,duplicate-format,injection,dev,ok
+G079,pilot,P001,P015,Maksym Shevchenko,Marek Shevchenko,0,hard-natural,auto-hard,test,ok
+G080,airport,KRK,krk_b,Krakow John Paul II,Krakow John Payl II,1,duplicate-typo,injection,test,ok
+G081,airport,WAW,wmi_b,Warsaw Chopin,Warsaw Modlin International Airport,0,hard-natural,auto-hard,dev,ok
+G082,passenger,X018,X130,Piotr Weber,Viktor Weber,0,decoy,injection,test,ok
+G083,aircraft,DJ-028,EN-023,DJ-028,EN-023,0,random,auto-random,test,ok
+G084,pilot,P001,P050,Maksym Shevchenko,Shevchenko Marek,0,hard-natural,auto-hard,dev,ok
+G085,pilot,P046,P042,Oeh Savchenko,Stefan Fischer,0,random,auto-random,test,ok
+G086,airport,CPH,cph_b,Copenhagen Kastrup,Copenhagen Kasteup,1,duplicate-typo,injection,dev,ok
+G087,passenger,X028,X127,Piotr Wisniewski,Viktor Wisniewski,0,decoy,injection,dev,ok
+G088,aircraft,AL-012,AL012,AL-012,AL012,1,duplicate-format,injection,test,ok
+G089,aircraft,MS-034,SU-003,MS-034,SU-003,0,random,auto-random,test,ok
+G090,passenger,X063,X126,Iryna Wojcik,Katarzyna Wojcik,0,decoy,injection,test,ok
+G091,passenger,X109,X119,OLEH NOWAK,OLENA NOWAK,0,hard-natural,auto-hard,dev,ok
+G092,passenger,X059,X113,Lukas Wisniewski,Wisniewski Lukas,1,duplicate-order,injection,dev,ok
+G093,passenger,X063,X042,Iryna Wojcik,Katarzyna Nowak,0,random,auto-random,test,ok
+G094,passenger,X022,X128,Yulia Fischer,Julia Fischer,0,decoy,injection,test,ok
+G095,pilot,P005,P056,Thomas Muller,Lukas Muller,0,decoy,injection,test,ok
+G096,pilot,P046,P005,Oeh Savchenko,Thomas Muller,0,random,auto-random,test,ok
+G097,passenger,X079,X118,Viktor Boyko,Vitkor Boyko,1,duplicate-typo,injection,test,ok
+G098,passenger,X038,X110,Mykola Muller,Muller Mykola,1,duplicate-order,injection,dev,ok
+G099,passenger,X015,X059,Taras Weber,Lukas Wisniewski,0,random,auto-random,test,ok
+G100,pilot,P008,P046,Oleh Savchenko,Oeh Savchenko,1,duplicate-typo,injection,dev,ok
+G101,passenger,X030,X121,Taras Melnyk,Daryna Melnyk,0,decoy,injection,test,ok
+G102,passenger,X033,X102,Viktor Kravchuk,V. Kravchuk,1,duplicate-initial,injection,dev,ok
+G103,pilot,P002,P047,Yulia Kowalski,YULIA KOWALSKI,1,duplicate-case,injection,test,ok
+G104,passenger,X002,X104,Sofiia Fischer,Sofiya Fischer,1,duplicate-translit,injection,test,ok
+G105,pilot,P054,P041,Oleh Bodar,Thomas Schmidt,0,random,auto-random,dev,ok
+G106,passenger,X025,X092,Maksym Boyko,Lysenko Daryna,0,random,auto-random,dev,ok
+G107,airport,ARN,WRO,Stockholm Arlanda,Wroclaw Copernicus,0,random,auto-random,dev,ok
+G108,passenger,X117,X094,L. Kowalski,D. Kovalenko,0,random,auto-random,dev,ok
+G109,pilot,P004,P008,Olena Savchenko,Oleh Savchenko,0,hard-natural,auto-hard,test,ok
+G110,airport,BUD,OTP,Budapest Ferenc Liszt,Bucharest Henri Coanda,0,hard-natural,auto-hard,test,ok
+G111,airport,WAW,WMI,Warsaw Chopin,Warsaw Modlin,0,hard-natural,auto-hard,test,ok
+G112,aircraft,MS-034,AW-032,MS-034,AW-032,0,random,auto-random,dev,ok
+G113,passenger,X068,X101,Klara Melnyk,Klraa Melnyk,1,duplicate-typo,injection,test,ok
+G114,passenger,X075,X129,Olena Polishchuk,Oleh Polishchuk,0,decoy,injection,dev,ok
+G115,passenger,X050,X062,Yulia Tkachenko,Yulia Savchenko,0,hard-natural,auto-hard,dev,ok
+G116,passenger,X059,X075,Lukas Wisniewski,Olena Polishchuk,0,random,auto-random,test,ok
+G117,passenger,X077,X095,Marek Kravchuk,M. Kravchuk,1,duplicate-initial,injection,test,ok
+G118,passenger,X130,X007,Viktor Weber,Julia Schmidt,0,random,auto-random,dev,ok
+G119,aircraft,MS-036,ms-036,MS-036,ms-036,1,duplicate-format,injection,test,ok
+G120,passenger,X097,X021,Yuliia Tkachenko,Lukas Tkachenko,0,random,auto-random,test,ok

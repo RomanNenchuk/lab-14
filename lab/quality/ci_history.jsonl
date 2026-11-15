@@ -1,0 +1,7 @@
+{"ts": "2026-11-15T00:50:16+02:00", "variant": "lab11", "checks_total": 20, "checks_failed": 0, "violations": 0, "passed": true, "failed_ids": []}
+{"ts": "2026-11-15T00:50:22+02:00", "variant": "baseline", "checks_total": 20, "checks_failed": 16, "violations": 232, "passed": false, "failed_ids": ["S02", "S03", "S04", "S05", "S07", "S08", "S09", "Q01", "Q02", "Q03", "Q04", "P03", "P04", "P05", "P06", "J01"]}
+{"ts": "2026-11-15T00:51:30+02:00", "variant": "lab11", "checks_total": 20, "checks_failed": 0, "violations": 0, "passed": true, "failed_ids": []}
+{"ts": "2026-11-15T00:51:33+02:00", "variant": "baseline", "checks_total": 20, "checks_failed": 16, "violations": 232, "passed": false, "failed_ids": ["S02", "S03", "S04", "S05", "S07", "S08", "S09", "Q01", "Q02", "Q03", "Q04", "P03", "P04", "P05", "P06", "J01"]}
+{"ts": "2026-11-15T00:51:43+02:00", "variant": "clean", "checks_total": 20, "checks_failed": 10, "violations": 180, "passed": false, "failed_ids": ["S03", "S04", "S05", "S07", "S08", "S09", "Q03", "P05", "P06", "J01"]}
+{"ts": "2026-11-15T01:02:31+02:00", "variant": "clean", "checks_total": 20, "checks_failed": 10, "violations": 180, "passed": false, "failed_ids": ["S03", "S04", "S05", "S07", "S08", "S09", "Q03", "P05", "P06", "J01"]}
+{"ts": "2026-11-15T01:03:37+02:00", "variant": "clean", "checks_total": 20, "checks_failed": 0, "violations": 0, "passed": true, "failed_ids": []}

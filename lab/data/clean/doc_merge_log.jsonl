@@ -1,0 +1,6 @@
+{"merge_id": "DM001", "duplicate": "en_aircraft_ground_handling_mirror", "kept": "en_aircraft_ground_handling", "reason": "дзеркало документа, схожість тексту 0.998", "score": 0.998, "ts": "2026-11-15T00:17:22+02:00", "reverted": false}
+{"merge_id": "DM002", "duplicate": "en_airline_mirror", "kept": "en_airline", "reason": "дзеркало документа, схожість тексту 0.999", "score": 0.999, "ts": "2026-11-15T00:17:22+02:00", "reverted": false}
+{"merge_id": "DM003", "duplicate": "en_airline_hub_mirror", "kept": "en_airline_hub", "reason": "дзеркало документа, схожість тексту 0.998", "score": 0.998, "ts": "2026-11-15T00:17:22+02:00", "reverted": false}
+{"merge_id": "DM004", "duplicate": "en_eurocontrol_mirror", "kept": "en_eurocontrol", "reason": "дзеркало документа, схожість тексту 0.999", "score": 0.999, "ts": "2026-11-15T00:17:22+02:00", "reverted": false}
+{"merge_id": "DM005", "duplicate": "en_icao_airport_code_mirror", "kept": "en_icao_airport_code", "reason": "дзеркало документа, схожість тексту 0.996", "score": 0.996, "ts": "2026-11-15T00:17:22+02:00", "reverted": false}
+{"merge_id": "DM006", "duplicate": "en_revenue_management_mirror", "kept": "en_revenue_management", "reason": "дзеркало документа, схожість тексту 0.998", "score": 0.998, "ts": "2026-11-15T00:17:22+02:00", "reverted": false}

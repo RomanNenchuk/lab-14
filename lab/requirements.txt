@@ -1,0 +1,17 @@
+# Python 3.10+ ; Ubuntu. Встановлення: make setup  (спершу ставить torch CPU, потім цей файл)
+# --- сховище і якість (Результати 1–4) ---
+pandas>=2.2
+numpy>=1.26
+rdflib>=7.0
+pyshacl>=0.26          # SHACL
+rapidfuzz>=3.9         # рядкова схожість для entity resolution
+jsonschema>=4.22       # JSON Schema-перевірки
+pyyaml>=6.0
+duckdb>=1.0            # SQL-інваріанти над таблицями; куб ЛР 12 за потреби
+pytest>=8.0
+python-dotenv>=1.0
+# --- RAG з ЛР 11 (Результат 5) і embeddings для дедуплікації (Результат 2) ---
+faiss-cpu>=1.8
+sentence-transformers>=3.0
+rank-bm25>=0.2.2
+google-genai>=1.0      # Gemini: LLM-суддя дублікатів і RAG

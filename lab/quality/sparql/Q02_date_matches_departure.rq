@@ -1,0 +1,6 @@
+# Інваріант: дата рейсу збігається з датою в scheduledDeparture.
+PREFIX av: <https://example.org/aviation#>
+SELECT ?flight ?date ?sd WHERE {
+  ?flight av:date ?date ; av:scheduledDeparture ?sd .
+  FILTER (SUBSTR(STR(?sd), 1, 10) != STR(?date))
+}

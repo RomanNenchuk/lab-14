@@ -1,0 +1,18 @@
+{
+  "threshold": 0.83,
+  "uncertain_delta": 0.08,
+  "weights": {
+    "string": 0.6,
+    "embedding": 0.4
+  },
+  "embedder": "e5",
+  "tuned_on": "dev, 61 пар",
+  "dev_metrics": {
+    "precision": 0.963,
+    "recall": 1.0,
+    "f1": 0.981,
+    "tp": 26,
+    "fp": 1,
+    "fn": 0
+  }
+}

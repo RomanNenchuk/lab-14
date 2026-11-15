@@ -1,0 +1,10 @@
+# Легкий набір для GitHub Actions (без torch/faiss/Gemini): лише перевірки якості.
+pandas>=2.2
+numpy>=1.26
+rdflib>=7.0
+pyshacl>=0.26
+rapidfuzz>=3.9
+jsonschema>=4.22
+pyyaml>=6.0
+duckdb>=1.0
+pytest>=8.0
